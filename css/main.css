@@ -34,6 +34,7 @@ a:visited { color: #a0a; }
 /* Home
 /*
 /*****************************************************************************/
+
 .posts {
   list-style-type: none;
   margin-bottom: 2em;
@@ -60,11 +61,13 @@ a:visited { color: #a0a; }
   background: #EEE;
   text-align: justify;
   width: 42em;
-  margin: 0em auto 2em;
-  padding-top: 3em;
+  margin: 0em auto 0em;
+  padding-top: 1.5em;
   padding-left: .5em;
   padding-right: .5em;
   line-height: 1.5em;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .headerContainer {
@@ -89,8 +92,9 @@ a:visited { color: #a0a; }
 }
 
 .title {
+  font-size: 125%;
   display: inline-block;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 }
 
 .title a {
@@ -118,9 +122,10 @@ a:visited { color: #a0a; }
 .footer {
   font-size: 80%;
   color: #666;
-  border-top: 1px solid #000;
-  margin-top: 2em;
+  margin-top: 5em;
+  border-top: 1px solid #333;
   overflow: hidden;
+  height: 90px;
 }
 
 .footer .contact {
@@ -140,6 +145,11 @@ a:visited { color: #a0a; }
 
 .footer .rss img {
   border: 0;
+}
+
+.page-title {
+  font-size: 115%;
+  text-decoration:underline;
 }
 
 /*****************************************************************************/
@@ -178,4 +188,9 @@ a:visited { color: #a0a; }
 
 .post pre.terminal code {
   background-color: #333;
+}
+
+/* Utility */
+.floatRight {
+  float: right;
 }
